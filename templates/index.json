@@ -102,6 +102,7 @@
         },
         "text_Py67Ur": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": ""
           }
@@ -127,71 +128,6 @@
         "width": "medium",
         "margin_top": "no-indent",
         "margin_bottom": "no-indent"
-      }
-    },
-    "product-slider": {
-      "type": "product-slider",
-      "blocks": {
-        "product_slide": {
-          "type": "product_slide",
-          "settings": {
-            "product": "",
-            "color_scheme": "",
-            "overlay_opacity": 0.1,
-            "description": "Soft fabrics, flattering silhouettes, and timeless style."
-          }
-        },
-        "product_slide1": {
-          "type": "product_slide",
-          "settings": {
-            "product": "",
-            "color_scheme": "",
-            "overlay_opacity": 0.1,
-            "description": "Modern, versatile, and designed to make an impact without the effort."
-          }
-        },
-        "product_slide2": {
-          "type": "product_slide",
-          "settings": {
-            "product": "",
-            "color_scheme": "",
-            "overlay_opacity": 0.1,
-            "description": "Comfortable, chic, stylish, and always in season."
-          }
-        }
-      },
-      "block_order": [
-        "product_slide",
-        "product_slide1",
-        "product_slide2"
-      ],
-      "disabled": true,
-      "settings": {
-        "image_size": "large",
-        "subheading": "",
-        "heading": "",
-        "heading_size": "h1",
-        "description": "",
-        "button_label": "",
-        "button_link": "",
-        "button_style": "simple",
-        "is_autoplay": false,
-        "is_hover_stop_autoplay": true,
-        "navigation_position": "cursor",
-        "slideshow_speed": 1.1,
-        "slideshow_delay": 3,
-        "slide_effects": "slide",
-        "is_sync_slide": true,
-        "enable_animation": true,
-        "image_ratio": "portrait",
-        "image_fit": "cover",
-        "show_vendor": false,
-        "show_color_count": true,
-        "show_size_count": false,
-        "show_collection": false,
-        "show_desc": false,
-        "margin_top": "no-indent",
-        "margin_bottom": "m"
       }
     },
     "media-banner": {
@@ -458,129 +394,6 @@
         "margin_bottom": "m"
       }
     },
-    "featured-product": {
-      "type": "featured-product",
-      "blocks": {
-        "title": {
-          "type": "title",
-          "settings": {
-            "heading_size": "h2"
-          }
-        },
-        "price": {
-          "type": "price",
-          "settings": {}
-        },
-        "description": {
-          "type": "description",
-          "settings": {
-            "description": "With sharp lapels and a minimalist design, it's perfect for both professional settings and sophisticated evenings."
-          }
-        },
-        "variant_picker": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "button",
-            "pill_group": false,
-            "show_size_guide": false,
-            "size_guide_text": "Size Guide",
-            "size_guide_header": "",
-            "size_guide_description": "",
-            "page": ""
-          }
-        },
-        "buy_buttons": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": false,
-            "show_quantity": false,
-            "notification_modal": true,
-            "modal_button_label": "Notify Me",
-            "heading": "Some heading",
-            "description": "Some description",
-            "button_label": "Button Label",
-            "button_link": "",
-            "description_2": "Some description",
-            "button_label_2": "Button Label",
-            "button_link_2": ""
-          }
-        }
-      },
-      "block_order": [
-        "title",
-        "price",
-        "description",
-        "variant_picker",
-        "buy_buttons"
-      ],
-      "disabled": true,
-      "settings": {
-        "subheading": "",
-        "heading": "Most Popular Piece",
-        "heading_size": "h1",
-        "description": "",
-        "product_item": "",
-        "desktop_alignment": "right",
-        "mobile_alignment": "before",
-        "image_ratio": "portrait",
-        "image_fit": "cover",
-        "button_label": "",
-        "button_link": "",
-        "button_style": "simple",
-        "margin_top": "no-indent",
-        "margin_bottom": "m"
-      }
-    },
-    "featured-products": {
-      "type": "featured-products",
-      "blocks": {
-        "product-slide": {
-          "type": "product-slide",
-          "settings": {
-            "heading": "An Elegant Glow",
-            "product": ""
-          }
-        },
-        "product-slide1": {
-          "type": "product-slide",
-          "settings": {
-            "heading": "Radiate confidence with timeless pieces",
-            "product": ""
-          }
-        },
-        "product-slide2": {
-          "type": "product-slide",
-          "settings": {
-            "heading": "Discover the allure of understated elegance",
-            "product": ""
-          }
-        }
-      },
-      "block_order": [
-        "product-slide",
-        "product-slide1",
-        "product-slide2"
-      ],
-      "disabled": true,
-      "settings": {
-        "color_scheme": "",
-        "big_image_ratio": "portrait",
-        "heading_size": "h3",
-        "columns": 3,
-        "slider": true,
-        "stop_autoplay": true,
-        "navigation": false,
-        "slideshow_speed": 20,
-        "hover_effect": true,
-        "animate_on_scroll": true,
-        "overlay_opacity": 0.1,
-        "image_ratio": "portrait",
-        "show_vendor": false,
-        "show_collection": false,
-        "margin_top": "no-indent",
-        "margin_bottom": "l"
-      }
-    },
     "image-with-text": {
       "type": "image-with-text",
       "disabled": true,
@@ -780,22 +593,48 @@
         "margin_top": "no-indent",
         "margin_bottom": "m"
       }
+    },
+    "products_grid_PddfBX": {
+      "type": "products-grid",
+      "name": "t:sections.products-grid.name",
+      "settings": {
+        "subheading": "",
+        "heading": "Your product grid title",
+        "description": "",
+        "heading_size": "h1",
+        "collection": "huggie-hoop-earrings",
+        "product_list": [],
+        "products_per_page": 4,
+        "products_to_show": 4,
+        "sort": "alphabetical",
+        "image_ratio": "portrait",
+        "image_fit": "cover",
+        "show_vendor": false,
+        "show_color_count": true,
+        "show_size_count": false,
+        "show_collection": false,
+        "show_desc": false,
+        "columns_mobile": "1",
+        "button_label": "Explore More",
+        "button_link": "",
+        "button_style": "simple",
+        "margin_top": "m",
+        "margin_bottom": "m"
+      }
     }
   },
   "order": [
     "media_banner_RFYf8A",
     "popular-products",
     "rich_text_FQBP78",
-    "product-slider",
     "media-banner",
     "banner-with-popup",
     "media-banner-1",
     "slideshow1",
-    "featured-product",
-    "featured-products",
     "image-with-text",
     "featured-blog",
     "media-banner-2",
-    "multicolumn"
+    "multicolumn",
+    "products_grid_PddfBX"
   ]
 }
