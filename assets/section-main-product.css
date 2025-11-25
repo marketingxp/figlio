@@ -2841,8 +2841,6 @@ main .shopify-section:first-child.not-margin .section--have-overlay:not(.article
 
 .complementary-products {
   margin: 2.4rem 0;
-  overflow: hidden;
-  max-width: 100%;
 }
 @media (min-width: 576px) {
   .complementary-products {
@@ -2856,6 +2854,9 @@ main .shopify-section:first-child.not-margin .section--have-overlay:not(.article
 .complementary-products .product-form__controls-group label.color-swatch:after {
   width: 1rem !important;
   height: 1rem !important;
+}
+.complementary-products .swiper {
+  overflow: hidden;
 }
 .complementary-products .collection-product-card {
   width: 50%;
