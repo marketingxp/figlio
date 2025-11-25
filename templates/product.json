@@ -252,7 +252,6 @@
     },
     "product-recommendations": {
       "type": "product-recommendations",
-      "disabled": true,
       "settings": {
         "subheading": "",
         "heading": "Alternative styles",
