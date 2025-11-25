@@ -26,6 +26,33 @@ section:first-child .section--has-overlay.slideshow--layout_4 .slideshow__info, 
 .slideshow--medium {
   min-height: 65vh;
 }
+.slideshow--adapt {
+  min-height: auto;
+}
+.slideshow--adapt .slideshow__contents-wrapper,
+.slideshow--adapt .slideshow__image,
+.slideshow--adapt .slideshow__image-wrapper,
+.slideshow--adapt .slideshow__video-wrapper,
+.slideshow--adapt .slideshow__video,
+.slideshow--adapt .slideshow__video video,
+.slideshow--adapt .slideshow__video iframe {
+  position: relative !important;
+  inset: auto;
+  height: auto;
+}
+.slideshow--adapt .slideshow__image img {
+  position: relative;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.slideshow--adapt .slideshow__info {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .slideshow__contents-wrapper, .slideshow__image, .slideshow__image-wrapper, .slideshow__video-wrapper, .slideshow__video, .slideshow__video video, .slideshow__video iframe {
   position: absolute !important;
   inset: 0;

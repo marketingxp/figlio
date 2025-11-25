@@ -87,18 +87,18 @@ main .shopify-section:first-child.not-margin .section--have-overlay:not(.article
     gap: 5.6rem;
   }
 }
-.product__outer--static-multicolumns-aside, .product__outer--thumbs-aside, .product__outer--static-column-aside, .product__outer--two-column-aside {
+.product__outer--static-multicolumns-aside, .product__outer--thumbs-aside, .product__outer--static-column-aside, .product__outer--two-column-aside, .product__outer--grid-2x2 {
   flex-direction: column;
   gap: 2.4rem;
 }
 @media (min-width: 1100px) {
-  .product__outer--static-multicolumns-aside, .product__outer--thumbs-aside, .product__outer--static-column-aside, .product__outer--two-column-aside {
+  .product__outer--static-multicolumns-aside, .product__outer--thumbs-aside, .product__outer--static-column-aside, .product__outer--two-column-aside, .product__outer--grid-2x2 {
     flex-direction: row;
     gap: 6.4rem;
   }
 }
 @media (min-width: 1360px) {
-  .product__outer--static-multicolumns-aside, .product__outer--thumbs-aside, .product__outer--static-column-aside, .product__outer--two-column-aside {
+  .product__outer--static-multicolumns-aside, .product__outer--thumbs-aside, .product__outer--static-column-aside, .product__outer--two-column-aside, .product__outer--grid-2x2 {
     gap: 12rem;
   }
 }
