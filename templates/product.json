@@ -97,6 +97,7 @@
         },
         "complementary_MDe68y": {
           "type": "complementary",
+          "disabled": true,
           "settings": {
             "heading": "Also available in...",
             "heading_size": "h3",
@@ -251,6 +252,7 @@
     },
     "product-recommendations": {
       "type": "product-recommendations",
+      "disabled": true,
       "settings": {
         "subheading": "",
         "heading": "Alternative styles",
