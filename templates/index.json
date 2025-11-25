@@ -194,7 +194,7 @@
         "show_size_count": false,
         "show_collection": false,
         "show_desc": false,
-        "columns_mobile": "1",
+        "columns_mobile": "2",
         "button_label": "Explore More",
         "button_link": "",
         "button_style": "simple",
