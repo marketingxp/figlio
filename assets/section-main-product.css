@@ -2841,6 +2841,8 @@ main .shopify-section:first-child.not-margin .section--have-overlay:not(.article
 
 .complementary-products {
   margin: 2.4rem 0;
+  overflow: hidden;
+  max-width: 100%;
 }
 @media (min-width: 576px) {
   .complementary-products {
