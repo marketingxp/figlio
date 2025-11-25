@@ -17,16 +17,16 @@
           "settings": {
             "color_scheme": "background-2",
             "image": "shopify://shop_images/hero-3.jpg",
-            "mobile_image": "shopify://shop_images/hero-3.jpg",
+            "mobile_image": "shopify://shop_images/hero-mob-2_ec40ad8e-cce7-48ee-96c6-7c8404297b8b.jpg",
             "overlay_opacity": 0,
             "enable_hover": false,
             "show_video": false,
             "video_url": "",
             "description_video": "",
-            "subheading": "The Perfect Circle",
-            "heading": "Handcrafted gold hoops for every moment",
+            "subheading": "",
+            "heading": "Figlio Jewellery",
             "heading_size": "h1",
-            "description": "",
+            "description": "Handcrafted gold hoops",
             "position_content": "bottom",
             "align_content": "left",
             "button_label": "Shop Hoop Earrings",
@@ -50,7 +50,7 @@
         "title_link": false,
         "gap": false,
         "aspect_ratio": "adapt",
-        "aspect_ratio_mobile": "full",
+        "aspect_ratio_mobile": "adapt",
         "margin_top": "no-indent",
         "margin_bottom": "m"
       }
@@ -169,7 +169,7 @@
         "title_link": false,
         "gap": false,
         "aspect_ratio": "adapt",
-        "aspect_ratio_mobile": "full",
+        "aspect_ratio_mobile": "adapt",
         "margin_top": "no-indent",
         "margin_bottom": "m"
       }
