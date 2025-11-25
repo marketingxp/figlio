@@ -1,1 +1,283 @@
-{"sections":{"main":{"type":"main-product","blocks":{"custom_liquid_6N9FNm":{"type":"custom_liquid","settings":{"custom_liquid":"{%- if product -%}\n  {%- assign m = product.metafields.custom.material -%}\n  {%- if m -%}\n    {%- assign value = m.value | default: m -%}\n    <div class=\"product-material underline\">\n      {{ value | escape }}\n    <\/div>\n  {%- endif -%}\n{%- endif -%}\n\n{%- style -%}\n.product-material {\n  word-break: break-all;\n  text-decoration: underline;\n}\n{%- endstyle -%}"}},"title":{"type":"title","settings":{"heading_size":"h1"}},"price":{"type":"price","settings":{}},"custom_liquid_BJkqJg":{"type":"custom_liquid","settings":{"custom_liquid":"{%- comment -%}\n  Minimal Klarna placement with \"3 payments of\" text.\n  - Uses native system fonts.\n  - Divides product price (in cents) by 3 with Liquid for the display text.\n  - Passes the full price (in cents) to Klarna via data-purchase-amount.\n{%- endcomment -%}\n\n{%- assign variant = product.selected_or_first_available_variant | default: product.variants.first -%}\n{%- if variant -%}\n  {%- assign price_cents = variant.price -%}\n  {%- assign installment_cents = price_cents | divided_by: 3 -%}\n\n  <div class=\"klarna-minimal\">\n    <span>or 3 payments of <span style=\"font-weight:600;\">{{ installment_cents | money }}<\/span> with Klarna.<\/span>\n  <\/div>\n\n  <klarna-placement\n    data-key=\"credit-promotion-auto-size\"\n    data-theme=\"light\"\n    data-message-prefix=\"\"\n    data-integration-style=\"app-blocks\"\n    data-locale=\"en-GB\"\n    data-preloaded=\"true\"\n    data-purchase-amount=\"{{ price_cents }}\"\n  >\n    <span><\/span>\n  <\/klarna-placement>\n\n  <style>\n    .klarna-minimal {\n      font: 14px\/1.4;\n      color: #000;\n      margin: 0.5rem 0;\n    }\n    .klarna-minimal span { opacity: 0.85; }\n  <\/style>\n{%- endif -%}"}},"variant_picker":{"type":"variant_picker","settings":{"picker_type":"button","pill_group":false,"show_size_guide":true,"size_guide_text":"Size Guide","size_guide_header":"Find Your Fit","size_guide_description":"<p>Use our size guide to choose the right size and shop with confidence.<\/p>","page":"size-chart"}},"buy_buttons":{"type":"buy_buttons","settings":{"show_dynamic_checkout":false,"show_quantity":false,"show_gift_card_recipient":false,"notification_modal":true,"modal_button_label":"Notify Me","heading":"Notification","description":"The product is unfortunately out of stock. Please contact us to let us know when it is available.","button_label":"Customer Care","button_link":"","description_2":"We suggest you check out similar products, maybe you will find something suitable for you.","button_label_2":"View Similar Products","button_link_2":""}},"custom_liquid_DAYQGx":{"type":"custom_liquid","settings":{"custom_liquid":"{% if product.metafields.custom.details %}\n  <div class=\"product-details\">\n    {{ product.metafields.custom.details | escape | newline_to_br }}\n  <\/div>\n{% endif %}"}},"description_J3BppF":{"type":"description","settings":{"description":""}},"popup_KKFQyV":{"type":"popup","settings":{"label":"More details","text":"<p>{{ product.metafields.custom.materials | metafield_tag }}<\/p>","text_2":"","heading":"","img_text":""}},"popup_yX9T7z":{"type":"popup","settings":{"label":"Delivery & Returns","text":"<p>Delivery within 3-5 business days - Free<\/p><p>Custom Made Product - Shipping usually 10 - 21 days.<br\/><br\/>Please remember that delivery times are calculated considering only working days (Saturdays, Sundays and holidays excluded). * Deliveries to Northern Ireland, Wales and Scotland may take one day longer to arrive.<br\/><br\/>The customisation process is unique and may therefore be slightly different from the image.<br\/><br\/>Your Custom Made FIGLIO My Name Necklace will be ready for shipping within 2 weeks from the date of your order. Total shipping time will be calculated on receipt of a notification email detailing that the item is ready to be shipped. You have the right to cancel this order as stated in art.59 in the Consumer Code.<\/p>","text_2":"<h3>Returns<\/h3><p><br\/>Free domestic returns on all available products.<br\/><br\/>Custom Made Product - Returns [Not applicable]<br\/><br\/>Custom Made Products cannot be returned and orders cannot be cancelled.<br\/><br\/>The customisation process is unique and may therefore be slightly different from the image.<br\/><br\/>Your Custom Made FIGLIO My Name Necklace will be ready for shipping within 2 weeks from the date of your order. Total shipping time will be calculated on receipt of a notification email detailing that the item is ready to be shipped. You have the right to cancel this order as stated in art.59 in the Consumer Code. This item cannot be exchanged. (For further information, please visit our withdrawal notes.) You are entitled to cancel your order within 24hrs of purchase.<\/p>","heading":"","img_text":""}},"complementary_MDe68y":{"type":"complementary","settings":{"heading":"Also available in...","heading_size":"h3","products_limit":4,"image_ratio":"square","image_fit":"cover","show_vendor":false,"show_collection":false,"show_desc":false,"columns_mobile":"2"}},"floated_form":{"type":"floated_form","settings":{"show_dynamic_checkout":false,"show_quantity":false}}},"block_order":["custom_liquid_6N9FNm","title","price","custom_liquid_BJkqJg","variant_picker","buy_buttons","custom_liquid_DAYQGx","description_J3BppF","popup_KKFQyV","popup_yX9T7z","complementary_MDe68y","floated_form"],"custom_css":[".card-information {background-color: #f6f6f6;}"],"settings":{"gallery_type":"static_multicolumns_aside","desktop_alignment":"right","mobile_alignment":"before","slider_direction":"vertical","image_ratio":"auto","image_fit":"cover","enable_full_screen":true,"header_overlay":true,"enable_sticky_button":false}},"product-slider":{"type":"product-slider","blocks":{"product_slide":{"type":"product_slide","settings":{"product":"leopard-stud-earrings","image":"shopify:\/\/shop_images\/2_6aa65524-9c6b-4a70-b245-6471acdcc0b9.webp","color_scheme":"","overlay_opacity":0.1,"description":"Highlight products, promos, or seasonal picks to engage visitors."}},"product_slide1":{"type":"product_slide","settings":{"product":"bold-droplet-earrings-18k-gold-vermeil-large","image":"shopify:\/\/shop_images\/Untitled_design_3.webp","color_scheme":"","overlay_opacity":0.1,"description":"Highlight products, promos, or seasonal picks to engage visitors."}},"product_slide2":{"type":"product_slide","settings":{"product":"fine-hoops-9ct-solid-gold-hoop-earrings","image":"shopify:\/\/shop_images\/64.webp","color_scheme":"","overlay_opacity":0.1,"description":"Highlight products, promos, or seasonal picks to engage visitors."}}},"block_order":["product_slide","product_slide1","product_slide2"],"disabled":true,"settings":{"image_size":"1\/1","subheading":"","heading":"{{ product.metafields.custom.jewellery_collection | metafield_text }} we think you'll love...","heading_size":"h1","description":"","button_label":"","button_link":"","button_style":"simple","is_autoplay":false,"is_hover_stop_autoplay":true,"navigation_position":"cursor","slideshow_speed":2,"slideshow_delay":3,"slide_effects":"slide","is_sync_slide":true,"enable_animation":true,"image_ratio":"portrait","image_fit":"cover","show_vendor":false,"show_color_count":true,"show_size_count":false,"show_collection":false,"show_desc":false,"margin_top":"m","margin_bottom":"m"}},"banner-with-popup":{"type":"banner-with-popup","blocks":{"image":{"type":"image","settings":{}}},"block_order":["image"],"disabled":true,"settings":{"aspect_ratio":"full","full_screen_image_mode":true,"heading":"Banner Title Goes Here","heading_size":"h1","description":"<p>This is where you can share a quick story, highlight a special collection, or introduce an upcoming event, adding depth and making your visuals more engaging.<\/p>","button_label":"View more","button_link":"","button_style":"simple","button_function":"popup","enable_animation":false,"slideshow_speed":6,"popup_heading":"Unlock Your Special Offer","popup_content_heading":"Ready to Shop?","popup_content":"<p>You can also use this space to highlight a specific collection, showcase limited-time offers, or introduce a special event. By adding context and narrative to your visuals, you’ll make them more impactful and memorable for your customers.<\/p>","popup_image_size":"portrait","popup_button_label":"","popup_button_link":"","popup_button_style":"tertiary","margin_top":"no-indent","margin_bottom":"m"}},"product-recommendations":{"type":"product-recommendations","settings":{"subheading":"","heading":"Alternative styles","description":"","heading_size":"h1","products_limit":4,"products_to_show":4,"image_ratio":"portrait","image_fit":"cover","show_vendor":false,"show_color_count":true,"show_size_count":false,"show_collection":true,"show_desc":false,"columns_mobile":"2","button_label":"","button_link":"","button_style":"simple","margin_top":"l","margin_bottom":"m"}}},"order":["main","product-slider","banner-with-popup","product-recommendations"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "custom_liquid_6N9FNm": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{%- if product -%}\n  {%- assign m = product.metafields.custom.material -%}\n  {%- if m -%}\n    {%- assign value = m.value | default: m -%}\n    <div class=\"product-material underline\">\n      {{ value | escape }}\n    </div>\n  {%- endif -%}\n{%- endif -%}\n\n{%- style -%}\n.product-material {\n  word-break: break-all;\n  text-decoration: underline;\n}\n{%- endstyle -%}"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "custom_liquid_BJkqJg": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{%- comment -%}\n  Minimal Klarna placement with \"3 payments of\" text.\n  - Uses native system fonts.\n  - Divides product price (in cents) by 3 with Liquid for the display text.\n  - Passes the full price (in cents) to Klarna via data-purchase-amount.\n{%- endcomment -%}\n\n{%- assign variant = product.selected_or_first_available_variant | default: product.variants.first -%}\n{%- if variant -%}\n  {%- assign price_cents = variant.price -%}\n  {%- assign installment_cents = price_cents | divided_by: 3 -%}\n\n  <div class=\"klarna-minimal\">\n    <span>or 3 payments of <span style=\"font-weight:600;\">{{ installment_cents | money }}</span> with Klarna.</span>\n  </div>\n\n  <klarna-placement\n    data-key=\"credit-promotion-auto-size\"\n    data-theme=\"light\"\n    data-message-prefix=\"\"\n    data-integration-style=\"app-blocks\"\n    data-locale=\"en-GB\"\n    data-preloaded=\"true\"\n    data-purchase-amount=\"{{ price_cents }}\"\n  >\n    <span></span>\n  </klarna-placement>\n\n  <style>\n    .klarna-minimal {\n      font: 14px/1.4;\n      color: #000;\n      margin: 0.5rem 0;\n    }\n    .klarna-minimal span { opacity: 0.85; }\n  </style>\n{%- endif -%}"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "pill_group": false,
+            "show_size_guide": true,
+            "size_guide_text": "Size Guide",
+            "size_guide_header": "Find Your Fit",
+            "size_guide_description": "<p>Use our size guide to choose the right size and shop with confidence.</p>",
+            "page": "size-chart"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_quantity": false,
+            "show_gift_card_recipient": false,
+            "notification_modal": true,
+            "modal_button_label": "Notify Me",
+            "heading": "Notification",
+            "description": "The product is unfortunately out of stock. Please contact us to let us know when it is available.",
+            "button_label": "Customer Care",
+            "button_link": "",
+            "description_2": "We suggest you check out similar products, maybe you will find something suitable for you.",
+            "button_label_2": "View Similar Products",
+            "button_link_2": ""
+          }
+        },
+        "custom_liquid_DAYQGx": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% if product.metafields.custom.details %}\n  <div class=\"product-details\">\n    {{ product.metafields.custom.details | escape | newline_to_br }}\n  </div>\n{% endif %}"
+          }
+        },
+        "description_J3BppF": {
+          "type": "description",
+          "settings": {
+            "description": ""
+          }
+        },
+        "popup_KKFQyV": {
+          "type": "popup",
+          "settings": {
+            "label": "More details",
+            "text": "<p>{{ product.metafields.custom.materials | metafield_tag }}</p>",
+            "text_2": "",
+            "heading": "",
+            "img_text": ""
+          }
+        },
+        "popup_yX9T7z": {
+          "type": "popup",
+          "settings": {
+            "label": "Delivery & Returns",
+            "text": "<p>Delivery within 3-5 business days - Free</p><p>Custom Made Product - Shipping usually 10 - 21 days.<br/><br/>Please remember that delivery times are calculated considering only working days (Saturdays, Sundays and holidays excluded). * Deliveries to Northern Ireland, Wales and Scotland may take one day longer to arrive.<br/><br/>The customisation process is unique and may therefore be slightly different from the image.<br/><br/>Your Custom Made FIGLIO My Name Necklace will be ready for shipping within 2 weeks from the date of your order. Total shipping time will be calculated on receipt of a notification email detailing that the item is ready to be shipped. You have the right to cancel this order as stated in art.59 in the Consumer Code.</p>",
+            "text_2": "<h3>Returns</h3><p><br/>Free domestic returns on all available products.<br/><br/>Custom Made Product - Returns [Not applicable]<br/><br/>Custom Made Products cannot be returned and orders cannot be cancelled.<br/><br/>The customisation process is unique and may therefore be slightly different from the image.<br/><br/>Your Custom Made FIGLIO My Name Necklace will be ready for shipping within 2 weeks from the date of your order. Total shipping time will be calculated on receipt of a notification email detailing that the item is ready to be shipped. You have the right to cancel this order as stated in art.59 in the Consumer Code. This item cannot be exchanged. (For further information, please visit our withdrawal notes.) You are entitled to cancel your order within 24hrs of purchase.</p>",
+            "heading": "",
+            "img_text": ""
+          }
+        },
+        "complementary_MDe68y": {
+          "type": "complementary",
+          "settings": {
+            "heading": "Also available in...",
+            "heading_size": "h3",
+            "products_limit": 4,
+            "image_ratio": "square",
+            "image_fit": "cover",
+            "show_vendor": false,
+            "show_collection": false,
+            "show_desc": false,
+            "columns_mobile": "2"
+          }
+        },
+        "floated_form": {
+          "type": "floated_form",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_quantity": false
+          }
+        }
+      },
+      "block_order": [
+        "custom_liquid_6N9FNm",
+        "title",
+        "price",
+        "custom_liquid_BJkqJg",
+        "variant_picker",
+        "buy_buttons",
+        "custom_liquid_DAYQGx",
+        "description_J3BppF",
+        "popup_KKFQyV",
+        "popup_yX9T7z",
+        "complementary_MDe68y",
+        "floated_form"
+      ],
+      "custom_css": [
+        ".card-information {background-color: #f6f6f6;}"
+      ],
+      "settings": {
+        "gallery_type": "static_multicolumns_aside",
+        "desktop_alignment": "right",
+        "mobile_alignment": "before",
+        "slider_direction": "vertical",
+        "image_ratio": "portrait",
+        "image_fit": "cover",
+        "enable_full_screen": true,
+        "header_overlay": true,
+        "enable_sticky_button": false
+      }
+    },
+    "product-slider": {
+      "type": "product-slider",
+      "blocks": {
+        "product_slide": {
+          "type": "product_slide",
+          "settings": {
+            "product": "leopard-stud-earrings",
+            "image": "shopify://shop_images/2_6aa65524-9c6b-4a70-b245-6471acdcc0b9.webp",
+            "color_scheme": "",
+            "overlay_opacity": 0.1,
+            "description": "Highlight products, promos, or seasonal picks to engage visitors."
+          }
+        },
+        "product_slide1": {
+          "type": "product_slide",
+          "settings": {
+            "product": "bold-droplet-earrings-18k-gold-vermeil-large",
+            "image": "shopify://shop_images/Untitled_design_3.webp",
+            "color_scheme": "",
+            "overlay_opacity": 0.1,
+            "description": "Highlight products, promos, or seasonal picks to engage visitors."
+          }
+        },
+        "product_slide2": {
+          "type": "product_slide",
+          "settings": {
+            "product": "fine-hoops-9ct-solid-gold-hoop-earrings",
+            "image": "shopify://shop_images/64.webp",
+            "color_scheme": "",
+            "overlay_opacity": 0.1,
+            "description": "Highlight products, promos, or seasonal picks to engage visitors."
+          }
+        }
+      },
+      "block_order": [
+        "product_slide",
+        "product_slide1",
+        "product_slide2"
+      ],
+      "disabled": true,
+      "settings": {
+        "image_size": "1/1",
+        "subheading": "",
+        "heading": "{{ product.metafields.custom.jewellery_collection | metafield_text }} we think you'll love...",
+        "heading_size": "h1",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "simple",
+        "is_autoplay": false,
+        "is_hover_stop_autoplay": true,
+        "navigation_position": "cursor",
+        "slideshow_speed": 2,
+        "slideshow_delay": 3,
+        "slide_effects": "slide",
+        "is_sync_slide": true,
+        "enable_animation": true,
+        "image_ratio": "portrait",
+        "image_fit": "cover",
+        "show_vendor": false,
+        "show_color_count": true,
+        "show_size_count": false,
+        "show_collection": false,
+        "show_desc": false,
+        "margin_top": "m",
+        "margin_bottom": "m"
+      }
+    },
+    "banner-with-popup": {
+      "type": "banner-with-popup",
+      "blocks": {
+        "image": {
+          "type": "image",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "image"
+      ],
+      "disabled": true,
+      "settings": {
+        "aspect_ratio": "full",
+        "full_screen_image_mode": true,
+        "heading": "Banner Title Goes Here",
+        "heading_size": "h1",
+        "description": "<p>This is where you can share a quick story, highlight a special collection, or introduce an upcoming event, adding depth and making your visuals more engaging.</p>",
+        "button_label": "View more",
+        "button_link": "",
+        "button_style": "simple",
+        "button_function": "popup",
+        "enable_animation": false,
+        "slideshow_speed": 6,
+        "popup_heading": "Unlock Your Special Offer",
+        "popup_content_heading": "Ready to Shop?",
+        "popup_content": "<p>You can also use this space to highlight a specific collection, showcase limited-time offers, or introduce a special event. By adding context and narrative to your visuals, you’ll make them more impactful and memorable for your customers.</p>",
+        "popup_image_size": "portrait",
+        "popup_button_label": "",
+        "popup_button_link": "",
+        "popup_button_style": "tertiary",
+        "margin_top": "no-indent",
+        "margin_bottom": "m"
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "subheading": "",
+        "heading": "Alternative styles",
+        "description": "",
+        "heading_size": "h1",
+        "products_limit": 4,
+        "products_to_show": 4,
+        "image_ratio": "portrait",
+        "image_fit": "cover",
+        "show_vendor": false,
+        "show_color_count": true,
+        "show_size_count": false,
+        "show_collection": true,
+        "show_desc": false,
+        "columns_mobile": "2",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "simple",
+        "margin_top": "l",
+        "margin_bottom": "m"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "product-slider",
+    "banner-with-popup",
+    "product-recommendations"
+  ]
+}
