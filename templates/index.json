@@ -80,7 +80,7 @@
         "button_label": "See all",
         "button_link": "shopify://collections/hoop-earrings",
         "button_style": "simple",
-        "margin_top": "xs",
+        "margin_top": "no-indent",
         "margin_bottom": "m"
       }
     },
@@ -146,7 +146,7 @@
             "subheading": "",
             "heading": "18k Gold Hoop Collection",
             "heading_size": "h1",
-            "description": "Timeless designs, premium metals, and effortless wearability. Essentials you’ll reach for every day.",
+            "description": "Our most premium earring collection. Yellow gold's warm glow complements all skin tones and never goes out of style",
             "position_content": "bottom",
             "align_content": "left",
             "button_label": "Discover Collection",
@@ -169,6 +169,78 @@
         "title_link": false,
         "gap": false,
         "aspect_ratio": "adapt",
+        "aspect_ratio_mobile": "full",
+        "margin_top": "no-indent",
+        "margin_bottom": "m"
+      }
+    },
+    "products_grid_PddfBX": {
+      "type": "products-grid",
+      "name": "t:sections.products-grid.name",
+      "settings": {
+        "subheading": "",
+        "heading": "Your product grid title",
+        "description": "",
+        "heading_size": "h1",
+        "collection": "huggie-hoop-earrings",
+        "product_list": [],
+        "products_per_page": 4,
+        "products_to_show": 4,
+        "sort": "alphabetical",
+        "image_ratio": "portrait",
+        "image_fit": "cover",
+        "show_vendor": false,
+        "show_color_count": true,
+        "show_size_count": false,
+        "show_collection": false,
+        "show_desc": false,
+        "columns_mobile": "1",
+        "button_label": "Explore More",
+        "button_link": "",
+        "button_style": "simple",
+        "margin_top": "m",
+        "margin_bottom": "m"
+      }
+    },
+    "media-banner-2": {
+      "type": "media-banner",
+      "blocks": {
+        "media_slide": {
+          "type": "media_slide",
+          "settings": {
+            "color_scheme": "",
+            "overlay_opacity": 0,
+            "enable_hover": true,
+            "show_video": false,
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "description_video": "",
+            "subheading": "",
+            "heading": "The Go-To Collection",
+            "heading_size": "h1",
+            "description": "Reliable, stylish, and effortlessly wearable clothing for any occasion, any season.",
+            "position_content": "bottom",
+            "align_content": "left",
+            "button_label": "Discover Collection",
+            "button_link": "",
+            "button_style": "simple",
+            "button_label2": "",
+            "button_link2": "",
+            "button_style2": "secondary",
+            "full_link": true
+          }
+        }
+      },
+      "block_order": [
+        "media_slide"
+      ],
+      "disabled": true,
+      "settings": {
+        "header_overlay": false,
+        "sticky": "sticky-none",
+        "layout": "simple",
+        "title_link": false,
+        "gap": false,
+        "aspect_ratio": "full",
         "aspect_ratio_mobile": "full",
         "margin_top": "no-indent",
         "margin_bottom": "m"
@@ -446,50 +518,6 @@
         "margin_bottom": "m"
       }
     },
-    "media-banner-2": {
-      "type": "media-banner",
-      "blocks": {
-        "media_slide": {
-          "type": "media_slide",
-          "settings": {
-            "color_scheme": "",
-            "overlay_opacity": 0,
-            "enable_hover": true,
-            "show_video": false,
-            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-            "description_video": "",
-            "subheading": "",
-            "heading": "The Go-To Collection",
-            "heading_size": "h1",
-            "description": "Reliable, stylish, and effortlessly wearable clothing for any occasion, any season.",
-            "position_content": "bottom",
-            "align_content": "left",
-            "button_label": "Discover Collection",
-            "button_link": "",
-            "button_style": "simple",
-            "button_label2": "",
-            "button_link2": "",
-            "button_style2": "secondary",
-            "full_link": true
-          }
-        }
-      },
-      "block_order": [
-        "media_slide"
-      ],
-      "disabled": true,
-      "settings": {
-        "header_overlay": false,
-        "sticky": "sticky-none",
-        "layout": "simple",
-        "title_link": false,
-        "gap": false,
-        "aspect_ratio": "full",
-        "aspect_ratio_mobile": "full",
-        "margin_top": "no-indent",
-        "margin_bottom": "m"
-      }
-    },
     "multicolumn": {
       "type": "multicolumn",
       "blocks": {
@@ -593,34 +621,6 @@
         "margin_top": "no-indent",
         "margin_bottom": "m"
       }
-    },
-    "products_grid_PddfBX": {
-      "type": "products-grid",
-      "name": "t:sections.products-grid.name",
-      "settings": {
-        "subheading": "",
-        "heading": "Your product grid title",
-        "description": "",
-        "heading_size": "h1",
-        "collection": "huggie-hoop-earrings",
-        "product_list": [],
-        "products_per_page": 4,
-        "products_to_show": 4,
-        "sort": "alphabetical",
-        "image_ratio": "portrait",
-        "image_fit": "cover",
-        "show_vendor": false,
-        "show_color_count": true,
-        "show_size_count": false,
-        "show_collection": false,
-        "show_desc": false,
-        "columns_mobile": "1",
-        "button_label": "Explore More",
-        "button_link": "",
-        "button_style": "simple",
-        "margin_top": "m",
-        "margin_bottom": "m"
-      }
     }
   },
   "order": [
@@ -628,13 +628,13 @@
     "popular-products",
     "rich_text_FQBP78",
     "media-banner",
+    "products_grid_PddfBX",
+    "media-banner-2",
     "banner-with-popup",
     "media-banner-1",
     "slideshow1",
     "image-with-text",
     "featured-blog",
-    "media-banner-2",
-    "multicolumn",
-    "products_grid_PddfBX"
+    "multicolumn"
   ]
 }
