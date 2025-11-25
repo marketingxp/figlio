@@ -685,7 +685,7 @@ main .shopify-section:first-child.not-margin .section--have-overlay:not(.article
 }
 @media (min-width: 1100px) {
   .product__outer--grid-2x2 .product__main {
-    width: 76%;
+    width: 66%;
   }
 }
 .product__outer--grid-2x2 .product__info-container {
@@ -693,7 +693,7 @@ main .shopify-section:first-child.not-margin .section--have-overlay:not(.article
 }
 @media (min-width: 1100px) {
   .product__outer--grid-2x2 .product__info-container {
-    width: 24%;
+    width: 34%;
     position: relative;
     top: 0;
     display: block;
