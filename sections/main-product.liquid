@@ -54,9 +54,9 @@
 	<link id="ModelViewerOverride" rel="stylesheet" href="{{ 'component-model-viewer-ui.css' | asset_url }}" media="print" onload="this.media='all'">
 {%- endif -%}
 
-<section id="MainProduct-{{ section.id }}" data-section="{{ section.id }}" data-color="dark" class="{% if section.settings.gallery_type == 'static_column_aside' or section.settings.gallery_type == 'two_column_aside' %}{% if section.settings.header_overlay == true %}section--have-overlay{% endif %}{% endif %}">
+<section id="MainProduct-{{ section.id }}" data-section="{{ section.id }}" data-color="dark" class="{% if section.settings.gallery_type == 'static_column_aside' or section.settings.gallery_type == 'two_column_aside' or section.settings.gallery_type == 'grid_2x2' %}{% if section.settings.header_overlay == true %}section--have-overlay{% endif %}{% endif %}">
 	<div class="product {% if product.media.size > 0 %}row{% else %}product--no-media{% endif %}">
-		<div class="{% if section.settings.gallery_type == 'static_multicolumns_aside' or section.settings.gallery_type == 'thumbs_aside' or section.settings.gallery_type == 'thumbs_aside_horizontal' or section.settings.gallery_type == 'mobile_sliding_bar' %} container {% endif %} product__outer product__outer--{% if section.settings.gallery_type == 'static_multicolumns_aside' %}static-multicolumns-aside{% elsif section.settings.gallery_type == 'thumbs_aside' or section.settings.gallery_type == 'thumbs_aside_horizontal' or section.settings.gallery_type == 'mobile_sliding_bar' %}thumbs-aside{% elsif section.settings.gallery_type == 'static_column_aside' %}static-column-aside{% elsif section.settings.gallery_type == 'two_column_aside' %}two-column-aside{% endif %}
+		<div class="{% if section.settings.gallery_type == 'static_multicolumns_aside' or section.settings.gallery_type == 'thumbs_aside' or section.settings.gallery_type == 'thumbs_aside_horizontal' or section.settings.gallery_type == 'mobile_sliding_bar' %} container {% endif %} product__outer product__outer--{% if section.settings.gallery_type == 'static_multicolumns_aside' %}static-multicolumns-aside{% elsif section.settings.gallery_type == 'thumbs_aside' or section.settings.gallery_type == 'thumbs_aside_horizontal' or section.settings.gallery_type == 'mobile_sliding_bar' %}thumbs-aside{% elsif section.settings.gallery_type == 'static_column_aside' %}static-column-aside{% elsif section.settings.gallery_type == 'two_column_aside' %}two-column-aside{% elsif section.settings.gallery_type == 'grid_2x2' %}grid-2x2{% endif %}
 			{% if section.settings.desktop_alignment == 'right' %}product__outer--desktop-order{% endif %}
 			{% if section.settings.mobile_alignment == 'after' %}product__outer--mobile-order{% endif %}
 			{% if section.settings.gallery_type == 'thumbs_aside_horizontal' or section.settings.gallery_type == 'mobile_sliding_bar' %} thumbs_aside_horizontal {% endif %}"
@@ -65,12 +65,12 @@
 				{% if product.media.size > 0 %}
 					<div class="product__media-wrapper">
 						<div class="product__media-list-wrapper">
-							<div class="product__media-list media_size-{{ section.settings.image_ratio }} {% if section.settings.gallery_type != 'static_multicolumns_aside' and section.settings.gallery_type != 'static_column_aside' and section.settings.gallery_type != 'two_column_aside' %}js-media-list swiper {% endif %} {% if section.settings.gallery_type == 'static_multicolumns_aside' and product.media.size == 1 %} product__media-list--full{% endif %} {% if section.settings.enable_full_screen %} product__media-list--full_screen {% endif %}no-js-hidden"
+							<div class="product__media-list media_size-{{ section.settings.image_ratio }} {% if section.settings.gallery_type != 'static_multicolumns_aside' and section.settings.gallery_type != 'static_column_aside' and section.settings.gallery_type != 'two_column_aside' and section.settings.gallery_type != 'grid_2x2' %}js-media-list swiper {% endif %} {% if section.settings.gallery_type == 'static_multicolumns_aside' and product.media.size == 1 %} product__media-list--full{% endif %} {% if section.settings.enable_full_screen %} product__media-list--full_screen {% endif %}no-js-hidden"
 								data-direction="{{ section.settings.slider_direction }}"
 							{% if section.settings.gallery_type == 'thumbs_aside_horizontal' or section.settings.gallery_type == 'mobile_sliding_bar' %} data-direction_desc = 'horizontal' {%  else %} data-direction_desc = 'vertical' {% endif %}
 								data-slider-type="main-product"
 							>
-								{% if section.settings.gallery_type != 'static_multicolumns_aside' and section.settings.gallery_type != 'static_column_aside' and section.settings.gallery_type != 'two_column_aside' %}<div class="swiper-wrapper">{% endif %}
+								{% if section.settings.gallery_type != 'static_multicolumns_aside' and section.settings.gallery_type != 'static_column_aside' and section.settings.gallery_type != 'two_column_aside' and section.settings.gallery_type != 'grid_2x2' %}<div class="swiper-wrapper">{% endif %}
 									{%- liquid
 										assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src'
 										assign media_count = product.media.size 
@@ -123,9 +123,9 @@
 												</div>
 										{%- endunless -%}
 									{%- endfor -%}
-										{% if section.settings.gallery_type != 'static_multicolumns_aside' and section.settings.gallery_type != 'static_column_aside' and section.settings.gallery_type != 'two_column_aside' %}</div>{% endif %}
+										{% if section.settings.gallery_type != 'static_multicolumns_aside' and section.settings.gallery_type != 'static_column_aside' and section.settings.gallery_type != 'two_column_aside' and section.settings.gallery_type != 'grid_2x2' %}</div>{% endif %}
 
-									{% if section.settings.gallery_type != 'static_multicolumns_aside' and section.settings.gallery_type != 'static_column_aside' and section.settings.gallery_type != 'two_column_aside' %}
+									{% if section.settings.gallery_type != 'static_multicolumns_aside' and section.settings.gallery_type != 'static_column_aside' and section.settings.gallery_type != 'two_column_aside' and section.settings.gallery_type != 'grid_2x2' %}
 										{% if product.media.size > 1 %}
 											<div class="container product__pagination-wrapper {% if section.settings.gallery_type == 'mobile_sliding_bar' %}product__pagination-mobile_sliding_bar-wrapper{% endif %}">
 												<div class="product__pagination swiper-pagination"></div>
@@ -2283,6 +2283,10 @@ customElements.define('product-modal', ProductModal);
 				{
 					"value": "two_column_aside",
 					"label": "t:sections.main-product.settings.gallery_type.options__4.label"
+				},
+				{
+					"value": "grid_2x2",
+					"label": "2x2 Grid gallery"
 				},
 				{
 					"value": "mobile_sliding_bar",
