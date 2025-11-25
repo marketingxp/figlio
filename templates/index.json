@@ -12,26 +12,6 @@
     "slideshow_B7DLfL": {
       "type": "slideshow",
       "blocks": {
-        "slideshow_item_Takeyk": {
-          "type": "slideshow-item",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/figlio-hero-v4-with-grain.jpg",
-            "mobile_image": "shopify://shop_images/figlio-hero-v4-with-grain.jpg",
-            "overlay_opacity": 0,
-            "show_video": false,
-            "video_url": "",
-            "description_video": "",
-            "heading": "Modern Classics for Every Occasion",
-            "description": "<p>Chic, well-crafted pieces that never go out of style. Discover our collection of earrings for women.</p>",
-            "tab_subheading": "",
-            "tab_heading": "Bespoke Style",
-            "button_label": "Discover Collection",
-            "button_link": "shopify://collections/earrings",
-            "button_style": "tertiary",
-            "enable_fullscreen_link": true
-          }
-        },
         "slideshow_item_ea7R7x": {
           "type": "slideshow-item",
           "settings": {
@@ -52,7 +32,6 @@
         }
       },
       "block_order": [
-        "slideshow_item_Takeyk",
         "slideshow_item_ea7R7x"
       ],
       "settings": {
@@ -69,60 +48,6 @@
         "slide_effects": "slide",
         "margin_top": "no-indent",
         "margin_bottom": "m"
-      }
-    },
-    "image_banner_YmxQFQ": {
-      "type": "image-banner",
-      "name": "t:sections.image-banner.presets.name",
-      "settings": {
-        "full_width": false,
-        "color_scheme": "background-1",
-        "info_position": "inside",
-        "image": "shopify://shop_images/7_ecb07df9-0bad-4e1c-af1f-85c8bd16a51b.png",
-        "mobile_image": "shopify://shop_images/11_Phone_View.png",
-        "image_ratio": "adapt",
-        "opacity_overlay": 0,
-        "heading": "",
-        "heading_size": "h1",
-        "text_information": "",
-        "text_align": "bottom-right",
-        "text_width": "full",
-        "additional_text": "",
-        "button_label": "Discover",
-        "button_style": "simple",
-        "button_link": "shopify://products/12mm-huggie-earrings-yellow-gold-18k",
-        "button_label2": "",
-        "button_style2": "tertiary",
-        "button_link2": "",
-        "margin_top": "no-indent",
-        "margin_bottom": "no-indent"
-      }
-    },
-    "image_banner_9hxr4N": {
-      "type": "image-banner",
-      "disabled": true,
-      "name": "t:sections.image-banner.presets.name",
-      "settings": {
-        "full_width": false,
-        "color_scheme": "background-1",
-        "info_position": "inside",
-        "image": "shopify://shop_images/10_fc6c025e-3574-4d0f-b72b-bf3a7e4438f4.png",
-        "image_ratio": "adapt",
-        "opacity_overlay": 0,
-        "heading": "",
-        "heading_size": "h1",
-        "text_information": "",
-        "text_align": "bottom-right",
-        "text_width": "full",
-        "additional_text": "",
-        "button_label": "Shop",
-        "button_style": "simple",
-        "button_link": "shopify://products/8mm-huggie-earrings-yellow-gold-18k",
-        "button_label2": "",
-        "button_style2": "tertiary",
-        "button_link2": "",
-        "margin_top": "no-indent",
-        "margin_bottom": "xs"
       }
     },
     "media_banner_RFYf8A": {
@@ -954,8 +879,6 @@
   },
   "order": [
     "slideshow_B7DLfL",
-    "image_banner_YmxQFQ",
-    "image_banner_9hxr4N",
     "media_banner_RFYf8A",
     "popular-products",
     "rich_text_FQBP78",
