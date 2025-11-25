@@ -705,7 +705,7 @@ main .shopify-section:first-child.not-margin .section--have-overlay:not(.article
     position: sticky;
     top: 6.4rem;
     width: 100%;
-    padding: 0 2rem;
+    padding: 2rem 4rem;
     transition: top var(--duration-default);
     margin-top: 6.4rem;
   }
