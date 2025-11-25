@@ -135,7 +135,7 @@
         ".card-information {background-color: #f6f6f6;}"
       ],
       "settings": {
-        "gallery_type": "static_multicolumns_aside",
+        "gallery_type": "two_column_aside",
         "desktop_alignment": "right",
         "mobile_alignment": "before",
         "slider_direction": "vertical",
