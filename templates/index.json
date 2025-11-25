@@ -624,6 +624,9 @@
     },
     "image_banner_yjtmrV": {
       "type": "image-banner",
+      "custom_css": [
+        ".image-banner .container-banner-wrapper .image-banner__wrapper {padding-left: 25px; padding-right: 25px; }"
+      ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
         "full_width": true,
