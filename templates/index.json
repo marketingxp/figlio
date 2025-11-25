@@ -77,7 +77,7 @@
         "show_collection": true,
         "show_desc": false,
         "columns_mobile": "2",
-        "button_label": "See all",
+        "button_label": "Explore more",
         "button_link": "shopify://collections/hoop-earrings",
         "button_style": "simple",
         "margin_top": "no-indent",
@@ -179,8 +179,8 @@
       "name": "t:sections.products-grid.name",
       "settings": {
         "subheading": "",
-        "heading": "Your product grid title",
-        "description": "",
+        "heading": "The Huggie Earring Collection",
+        "description": "Delicate yet striking. Our huggie hoop collection brings you that perfect whisper of gold that works from coffee runs to cocktail hours. Designed to sit close to the ear, these mini hoops are your new daily essential.",
         "heading_size": "h1",
         "collection": "huggie-hoop-earrings",
         "product_list": [],
@@ -196,9 +196,9 @@
         "show_desc": false,
         "columns_mobile": "2",
         "button_label": "Explore More",
-        "button_link": "",
+        "button_link": "shopify://collections/huggie-hoop-earrings",
         "button_style": "simple",
-        "margin_top": "m",
+        "margin_top": "no-indent",
         "margin_bottom": "m"
       }
     },
