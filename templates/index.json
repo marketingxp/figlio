@@ -38,7 +38,7 @@
         "header_overlay": true,
         "text_color_scheme": "",
         "layout": "layout_2",
-        "aspect_ratio": "medium",
+        "aspect_ratio": "adapt",
         "heading_size": "h1",
         "tabs_size": "h3",
         "is_autoplay": false,
