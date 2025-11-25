@@ -30,10 +30,10 @@
             "position_content": "bottom",
             "align_content": "left",
             "button_label": "Shop Hoop Earrings",
-            "button_link": "shopify://collections/14k-gold-hoop-earrings",
+            "button_link": "shopify://collections/hoop-earrings",
             "button_style": "simple",
             "button_label2": "",
-            "button_link2": "shopify://collections/hoop-earrings",
+            "button_link2": "",
             "button_style2": "secondary",
             "full_link": true
           }
