@@ -696,18 +696,19 @@ main .shopify-section:first-child.not-margin .section--have-overlay:not(.article
     width: 34%;
     position: relative;
     top: 0;
-    display: block;
-    height: auto;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
     margin: 0;
     padding: 0;
   }
   .product__outer--grid-2x2 .product__info-container .product__info-main {
     position: sticky;
-    top: 6.4rem;
+    top: 50%;
+    transform: translateY(-50%);
     width: 100%;
     padding: 2rem 4rem;
     transition: top var(--duration-default);
-    margin-top: 6.4rem;
   }
 }
 .product__outer--grid-2x2 .product__media-list {
@@ -748,6 +749,10 @@ main .shopify-section:first-child.not-margin .section--have-overlay:not(.article
 /* Hide media toggle button for 2x2 grid */
 .product__outer--grid-2x2 .product__media-toggle {
   display: none;
+}
+
+.product-material.underline {
+  padding-top: 30px;
 }
 
 @media (min-width: 750px) {
