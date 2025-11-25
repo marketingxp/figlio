@@ -102,7 +102,7 @@
             "heading": "Also available in...",
             "heading_size": "h3",
             "products_limit": 4,
-            "image_ratio": "square",
+            "image_ratio": "portrait",
             "image_fit": "cover",
             "show_vendor": false,
             "show_collection": false,
