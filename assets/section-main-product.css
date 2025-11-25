@@ -705,7 +705,7 @@ main .shopify-section:first-child.not-margin .section--have-overlay:not(.article
     position: sticky;
     top: 6.4rem;
     width: 100%;
-    padding: 0 2rem;
+    padding: 2rem 4rem;
     transition: top var(--duration-default);
     margin-top: 6.4rem;
   }
@@ -1148,10 +1148,10 @@ main .shopify-section:first-child.not-margin .section--have-overlay:not(.article
   padding-bottom: 70% !important;
 }
 .product__media-list.media_size-portrait .product__media {
-  padding-top: 130%;
+  padding-top: 111%;
 }
 .product__media-list.media_size-portrait .product__deferred_media .deferred-media {
-  padding-bottom: 130% !important;
+  padding-bottom: 111% !important;
 }
 .product__media-list.media_size-square .product__media {
   padding-top: 100%;
@@ -1204,10 +1204,10 @@ main .shopify-section:first-child.not-margin .section--have-overlay:not(.article
   padding-bottom: 70% !important;
 }
 .product__media-sublist-outer.media_size-portrait .product__media {
-  padding-top: 130%;
+  padding-top: 111%;
 }
 .product__media-sublist-outer.media_size-portrait .product__deferred_media .deferred-media {
-  padding-bottom: 130% !important;
+  padding-bottom: 111% !important;
 }
 .product__media-sublist-outer.media_size-square .product__media {
   padding-top: 100%;
