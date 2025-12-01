@@ -63,6 +63,8 @@
 
 .products-grid {
   transition: margin-left var(--duration-default);
+  padding-left: 0;
+  padding-right: 0;
 }
 @media screen and (min-width: 750px) {
   .products-grid {
@@ -199,12 +201,12 @@
 .collection-product-list {
   display: grid;
   flex-wrap: wrap;
-  gap: 2rem 2.4rem;
+  gap: 0.4rem;
   grid-template-columns: 1fr;
 }
 @media screen and (min-width: 576px) {
   .collection-product-list {
-    gap: 3.6rem 2.4rem;
+    gap: 0.4rem;
   }
 }
 .collection-product-list .collection-product-promo-img {
