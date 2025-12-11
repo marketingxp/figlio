@@ -492,7 +492,7 @@
 
 .card-information {
   position: relative;
-  padding: 1.2rem 0 0.4rem;
+  padding: 0 10px;
   z-index: 2;
   pointer-events: none;
 }
