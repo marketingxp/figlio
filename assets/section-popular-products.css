@@ -12,6 +12,7 @@
   padding-right: 0;
   max-width: 100%;
 }
+.popular-products > .container,
 .popular-products__container {
   padding-left: 0;
   padding-right: 0;
