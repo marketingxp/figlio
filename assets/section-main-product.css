@@ -691,6 +691,18 @@ main .shopify-section:first-child.not-margin .section--have-overlay:not(.article
 .product__outer--grid-2x2 .product__info-container {
   padding: 0 2rem;
 }
+@media (max-width: 1099px) {
+  .product__outer--grid-2x2 .product__info-container {
+    height: auto;
+    position: relative;
+    overflow: visible;
+  }
+  .product__outer--grid-2x2 .product__info-container .product__info-main {
+    position: relative;
+    top: auto;
+    transform: none;
+  }
+}
 @media (min-width: 1100px) {
   .product__outer--grid-2x2 .product__info-container {
     width: 34%;
