@@ -696,6 +696,7 @@ main .shopify-section:first-child.not-margin .section--have-overlay:not(.article
     height: auto;
     position: relative;
     overflow: visible;
+    margin-top: 2rem;
   }
   .product__outer--grid-2x2 .product__info-container .product__info-main {
     position: relative;
@@ -715,7 +716,8 @@ main .shopify-section:first-child.not-margin .section--have-overlay:not(.article
   }
   .product__outer--grid-2x2 .product__info-container .product__info-main {
     position: sticky;
-    top: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
     width: 100%;
     padding: 2rem 4rem;
     transition: top var(--duration-default);
