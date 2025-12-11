@@ -12,6 +12,14 @@
   padding-right: 0;
   max-width: 100%;
 }
+.popular-products__container {
+  padding-left: 0;
+  padding-right: 0;
+}
+.popular-products .section-heading {
+  padding-left: 20px;
+  padding-right: 20px;
+}
 @media screen and (min-width: 576px) {
   .popular-products__wrapper {
     gap: 0.4rem;
